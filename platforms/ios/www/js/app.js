@@ -19,6 +19,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    if (navigator.splashscreen) {
+      navigator.splashscreen.hide();
+    }
   });
 })
 

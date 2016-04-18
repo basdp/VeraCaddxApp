@@ -86,6 +86,7 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="SplashScreen" value="screen" />
+    <preference name="AutoHideSplashScreen" value="false" />
     <preference name="SplashScreenDelay" value="500" />
     <preference name="FadeSplashScreenDuration" value="300" />
 </widget>
