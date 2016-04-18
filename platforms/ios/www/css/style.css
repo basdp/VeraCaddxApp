@@ -1,0 +1,73 @@
+/* Empty. Add your own CSS if you like */
+
+ion-header-bar.bar.bar-stable {
+  background-color: transparent;
+  background-image: none !important;
+}
+
+#background {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00cbff+0,b26ebc+100 */
+    background: #00cbff; /* Old browsers */
+    background: linear-gradient(135deg, #00cbff 0%,#FF54B0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 100vh;
+    width: 100vw;
+    float: left;
+}
+
+.keypad {
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.keypad button {
+    width: 33.333%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    float: left;
+    height: 80px;
+    color: white;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.keypad button.active {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgb(200, 200, 200);
+}
+
+div.code {
+    padding: 100px 0;
+    text-align: center;
+}
+
+div.code .char {
+    display: inline-block;
+    width: 32px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+    height: 50px;
+    vertical-align: bottom;
+    font-size: 26px;
+    line-height: 48px;
+    color: white;
+}
+
+div.code .char.active {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+}
+
+div.code .char.filled::before {
+    content: "●";
+}
+
+div.code .char:last-child {
+    margin-right: 0;
+}

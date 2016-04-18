@@ -1,0 +1,37 @@
+<ion-view view-title="">
+    <div id="background"></div>
+
+    <ion-header-bar class="bar-dark" style="background: none;">
+        <div class="buttons buttons-left header-item"><span class="left-buttons">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </span></div>
+        <div class="h1 title" style="text-align: center;">Alarm Systeem</div>
+    </ion-header-bar>
+
+
+    <!-- https://dribbble.com/shots/2452219-Login/attachments/477796 -->
+    
+    <ion-content scroll="false">
+        <div class="code">
+            <div class="char char1" ng-class="{ active: atChar == 1, filled: atChar > 1 }"></div>
+            <div class="char char2" ng-class="{ active: atChar == 2, filled: atChar > 2 }"></div>
+            <div class="char char3" ng-class="{ active: atChar == 3, filled: atChar > 3 }"></div>
+            <div class="char char4" ng-class="{ active: atChar == 4, filled: atChar > 4 }"></div>
+        </div>
+
+        <div class="keypad">
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('1')">1</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('2')">2</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('3')">3</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('4')">4</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('5')">5</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('6')">6</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('7')">7</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('8')">8</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('9')">9</button>
+            <button disabled="disabled"></button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed('0')">0</button>
+            <button my-touchstart="buttonDown($event)" my-touchend="buttonUp($event)" ng-click="buttonPressed()"><i class="icon ion-backspace"></i></button>
+        </div>
+    </ion-content>
+</ion-view>
