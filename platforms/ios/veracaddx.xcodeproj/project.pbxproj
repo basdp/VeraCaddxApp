@@ -21,6 +21,14 @@
 		90D16F3AFDBA44F3B73FD3A5 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A08A6996284D96A4473962 /* CDVViewController+SplashScreen.m */; };
 		3E22E5E645E04C93862F5184 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF19043BD9D14649B24027AD /* CDVStatusBar.m */; };
 		9393C86669BB49F7AE05ED61 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A878F63A6054426B85596BF /* IonicKeyboard.m */; };
+		7D424B8361D441F3B2B2DE18 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 980CB42BCF5D46BCA945A730 /* CDVInAppBrowser.m */; };
+		7DE492E6AFFC4E6989F98BFB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D53C8FC961794F2F95A559E6 /* libz.dylib */; };
+		04B4812EA3364C38B4D62BDB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A87FAAE97434D24B3D02C94 /* CFNetwork.framework */; };
+		C3C225D8930B420D9681F8E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F280E4FECC646F6A4FD33E2 /* SystemConfiguration.framework */; };
+		507EA6A07C064DEBBB4C86F8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608938EB076C4F1392B4DD78 /* WebKit.framework */; };
+		943304D1C22F479CAF05AD95 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07C022EFB3418DA5A94714 /* CDVNotification.m */; };
+		2B9DB0FB643448B2838B7338 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 676A366ED70B4096AFE138D8 /* CDVNotification.bundle */; };
+		620B8AD8646C4DFDB3212ED1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7840D099E3248BDAF2F84C1 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +80,16 @@
 		A7E48921C62749E883FC3A6A /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		3A878F63A6054426B85596BF /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		3DC941510702492ABB6D975F /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		980CB42BCF5D46BCA945A730 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		AAD4EC6CF5C349CDA6A3245E /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D53C8FC961794F2F95A559E6 /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		5A87FAAE97434D24B3D02C94 /* CFNetwork.framework */ = {isa = PBXFileReference; name = "CFNetwork.framework"; path = "System/Library/Frameworks/CFNetwork.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		2F280E4FECC646F6A4FD33E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		608938EB076C4F1392B4DD78 /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		AB07C022EFB3418DA5A94714 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		72D7242FFD694BEEBD2927EE /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		676A366ED70B4096AFE138D8 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		E7840D099E3248BDAF2F84C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				7DE492E6AFFC4E6989F98BFB /* libz.dylib in Frameworks */,
+				04B4812EA3364C38B4D62BDB /* CFNetwork.framework in Frameworks */,
+				C3C225D8930B420D9681F8E5 /* SystemConfiguration.framework in Frameworks */,
+				507EA6A07C064DEBBB4C86F8 /* WebKit.framework in Frameworks */,
+				620B8AD8646C4DFDB3212ED1 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +164,7 @@
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* veracaddx-Info.plist */,
+				676A366ED70B4096AFE138D8 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "veracaddx/Resources";
@@ -149,6 +173,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D53C8FC961794F2F95A559E6 /* libz.dylib */,
+				5A87FAAE97434D24B3D02C94 /* CFNetwork.framework */,
+				2F280E4FECC646F6A4FD33E2 /* SystemConfiguration.framework */,
+				608938EB076C4F1392B4DD78 /* WebKit.framework */,
+				E7840D099E3248BDAF2F84C1 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +215,10 @@
 				A7E48921C62749E883FC3A6A /* CDVStatusBar.h */,
 				3A878F63A6054426B85596BF /* IonicKeyboard.m */,
 				3DC941510702492ABB6D975F /* IonicKeyboard.h */,
+				980CB42BCF5D46BCA945A730 /* CDVInAppBrowser.m */,
+				AAD4EC6CF5C349CDA6A3245E /* CDVInAppBrowser.h */,
+				AB07C022EFB3418DA5A94714 /* CDVNotification.m */,
+				72D7242FFD694BEEBD2927EE /* CDVNotification.h */,
 			);
 			name = Plugins;
 			path = "veracaddx/Plugins";
@@ -269,6 +302,7 @@
 				3047A5141AB8059700498E2A /* build.xcconfig in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
+				2B9DB0FB643448B2838B7338 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +340,8 @@
 				90D16F3AFDBA44F3B73FD3A5 /* CDVViewController+SplashScreen.m in Sources */,
 				3E22E5E645E04C93862F5184 /* CDVStatusBar.m in Sources */,
 				9393C86669BB49F7AE05ED61 /* IonicKeyboard.m in Sources */,
+				7D424B8361D441F3B2B2DE18 /* CDVInAppBrowser.m in Sources */,
+				943304D1C22F479CAF05AD95 /* CDVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +375,10 @@
 				INFOPLIST_FILE = "veracaddx/veracaddx-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "veracaddx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"veracaddx/Plugins/cordova-plugin-webserver\"",
+				);
 			};
 			name = Debug;
 		};
@@ -358,6 +398,10 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "veracaddx/veracaddx-Info.plist";
 				PRODUCT_NAME = "veracaddx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"veracaddx/Plugins/cordova-plugin-webserver\"",
+				);
 			};
 			name = Release;
 		};

@@ -35,8 +35,22 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
                         }
                     ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSAppTransportSecurity": [],
+                    "WKWebViewPluginEmbeddedServerPort": []
                 }
             }
         }
@@ -58,6 +72,12 @@
             "PACKAGE_NAME": "com.ionicframework.veracaddx185116"
         },
         "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.veracaddx185116"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.veracaddx185116"
+        },
+        "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.ionicframework.veracaddx185116"
         }
     },
@@ -111,6 +131,23 @@
                 "cordova.plugins.Keyboard"
             ],
             "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "id": "cordova-plugin-dialogs.notification",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -119,6 +156,8 @@
         "cordova-plugin-splashscreen": "3.2.1",
         "cordova-plugin-statusbar": "2.1.2",
         "cordova-plugin-whitelist": "1.2.1",
-        "ionic-plugin-keyboard": "2.0.1"
+        "ionic-plugin-keyboard": "2.0.1",
+        "cordova-plugin-inappbrowser": "1.4.0",
+        "cordova-plugin-dialogs": "1.2.1"
     }
 }

@@ -1,0 +1,42 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <div class="list">
+
+  <div class="item item-divider">
+    Vera connectie
+  </div>
+
+  <div ng-if="vera_id">
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-outlet"></i>
+    Vera ID
+    <span class="item-note">
+      {{ vera_id }}
+    </span>
+  </a>
+  
+  <div class="item">
+    <button class="button button-full button-assertive" ng-click="breakConnection()">
+      Connectie verbreken
+    </button>
+  </div>
+  </div>
+  
+  <div ng-if="!vera_id">  
+    
+    <div class="item">
+      Er is geen connectie met Vera.
+  </div>
+    
+  <div class="item">
+    <button class="button button-full button-positive" ng-click="makeConnection()">
+      Connectie maken
+    </button>
+  </div>
+  </div>
+
+
+</div>
+
+  </ion-content>
+</ion-view>
